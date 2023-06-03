@@ -1,0 +1,20 @@
+<body>
+    <!-- partial:index.partial.html -->
+    <div id="bg"></div>
+    
+    <form >
+      <div class="form-field">
+        <input type="email" placeholder="Email / Username" [(ngModel)]="mailid" name="firstname">
+      </div>
+      
+      <div class="form-field">
+        <input type="password" placeholder="Password" [(ngModel)]="password" name="secondName"/>                        
+      </div>
+      
+      <div class="form-field">
+        <button class="btn" type="submit" (click)="AdminLogin()">Log in</button>
+      </div>
+    </form>
+    <!-- partial -->
+      
+    </body>

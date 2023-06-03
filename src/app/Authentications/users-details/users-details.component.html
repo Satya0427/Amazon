@@ -1,0 +1,21 @@
+
+<table class="table table-hover" style="margin-top: 70px;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Gmail Id</th>
+        <th scope="col">Password</th>
+        <th scope="col">Update</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row">1</th>
+        <td>{{user.Name}}</td>
+        <td>{{user.id}}</td>
+        <td>{{user.Password}}</td>
+        <td><button class="btn btn-success">Edit</button>&nbsp;<button class="btn btn-danger" (click)="DeleteAccount(user.id)">Delete</button></td>
+      </tr>  
+    </tbody>
+  </table>
