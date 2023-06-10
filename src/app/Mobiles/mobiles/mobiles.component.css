@@ -28,6 +28,8 @@
     height:200px;
     width:200px;
     transition:0.3s ease-in-out;
+    margin-left:10%;
+    border-radius:15%;
 }
 .product_img:hover{
     transition: 0.3s ease-in-out;
@@ -37,6 +39,7 @@
     padding:20px;
     margin: 50px;
     background-color: #E5E5F3;
+    text-align: center;
 }
 .container{
     margin-left:100px;

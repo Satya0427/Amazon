@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 
 @Injectable({
@@ -10,7 +10,7 @@ export class AuthserviceService {
   UsersUrl='https://rest-api-yhi2.onrender.com/user';
   condition:boolean=false;
   
-  LoginUser = new BehaviorSubject("Login")
+  LoginUser = new Subject();
 
   constructor(private http:HttpClient) {}
 
@@ -28,5 +28,6 @@ export class AuthserviceService {
   DeleteUser(userid:any){
     return this.http.delete(this.UsersUrl+"/"+userid);
   }
+
 
 }

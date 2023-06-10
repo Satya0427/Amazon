@@ -7,12 +7,12 @@ import { AdminLoginComponent } from './Authentications/admin-login/admin-login.c
 import { UsersDetailsComponent } from './Authentications/users-details/users-details.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/mobilesList', pathMatch:'full' },
   {path:'login&Regestration', component:RegisterComponent},
   {path:'mobilesList', component:MobilesComponent},
   {path:'cart', component:CartComponent},
   {path:'AdminLogin', component:AdminLoginComponent},
-  {path:'UsersInfo', component:UsersDetailsComponent}
+  {path:'UsersInfo', component:UsersDetailsComponent},
+  {path:'',redirectTo:'mobilesList', pathMatch:'full' },
 ];
 
 @NgModule({

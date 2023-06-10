@@ -20,7 +20,10 @@ export class MobileServiceService {
 
   AddToCart(product:any){
     this.ProductsList.push(product);
-    this.PorductsSubject.next(this.ProductsList);  
+    this.PorductsSubject.next(this.ProductsList);
+  }
+  produtsize(){
+    return this.PorductsSubject;
   }
 
 }
