@@ -4,18 +4,17 @@
   }
 
   .toolbar {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 70px;
     display: flex;
-
-    
     align-items: center;
     background-color:#0F1111;
     color: white;
     font-weight: 900;
+    z-index:10;
   }
 
   .toolbar img {
@@ -50,7 +49,7 @@ border-right:1px solid #e5e5e5;
 position:fixed;
 top:70px;
 bottom:0;
-height:auto;
+height:100vh;
 left:0;
 width:60px;
 overflow:hidden;
@@ -153,10 +152,25 @@ height: 100%;
 }
 
 .backgroud{
-  
-  background-color:#E5E5F3 ;
-  min-height:700px;
-  max-height: auto;
-  width: 100%;
+
+background-image: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+min-height: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+
 }
+.search{
+  width:500px;
+  margin-left:100px;
+}
+
+@media (max-width:500px){
+  .search{
+    width: 100px;
+    margin-left: 10px;
+  }
+}
+
 

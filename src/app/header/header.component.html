@@ -1,0 +1,108 @@
+<nav class="Nav-Bar">
+    <div class="menu" (click)="OpenNav()">
+        <i class="fa-solid fa-bars fa-lg"></i>
+    </div>
+    <div class="Logo">
+        <img src="assets\hqdefault.jpg" alt="Satya" style="height: 40px;border-radius:500%;">
+    </div>
+    <input type="text" class="form-control Search-Bar" placeholder="Search Products">
+    <div  class="Nav-Links">
+        <div>
+            <li><a routerLink="login&Regestration">{{loginUser}}</a></li>
+        </div>
+        
+        <div>
+            <a  class="badge badge-primary" style="font-size: large;text-decoration: none;" (click)="OpenCart()"><i class="fa-solid fa-cart-shopping" aria-hidden="true" style="font-size:larger;"></i><span style="color: rgb(248, 248, 251);">{{length}}</span></a>
+        </div>
+    </div>
+    
+    
+</nav>
+
+    <nav class="side-nav" [class.sidenav]="active">
+
+        
+            <div class="title">
+                <h3 class="nav-text">
+                 {{loginUser}}
+                </h3>
+            </div>
+        
+        <ul>
+            <li >
+                <a href="#">
+                    <i class="fa fa-shoe-prints fa-2x"></i>
+                    <span class="nav-text">
+                        Shoes
+                    </span>
+                </a>
+                
+            </li>
+            <li>
+                <a routerLink="/AdminLogin">
+                   <i class="fa fa-comments fa-2x"></i>
+                    <span class="nav-text">
+                        Best sellers
+                    </span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                   <i class="fa fa-camera-retro fa-2x"></i>
+                    <span class="nav-text">
+                        New Releases
+                    </span>
+                </a>
+               
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-mobile fa-2x"></i>
+                    <span class="nav-text">
+                        Mobiles
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-laptop fa-2x"></i>
+                    <span class="nav-text">
+                       Laptops
+                    </span>
+                </a>
+            </li>
+            <li>
+               <a href="#">
+                   <i class="fa fa-diamond fa-2x"></i>
+                    <span class="nav-text">
+                        Jewalieries
+                    </span>
+                </a>
+            </li>
+            <li>
+               <a href="#">
+                  <i class="fa fa-shirt fa-1x"></i>
+                    <span class="nav-text">
+                        Mens Clothes
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   <i class="fa fa-vest-patches fa-2x"></i>
+                    <span class="nav-text">
+                        Womens Clothes
+                    </span>
+                </a>
+            </li>
+            <li>
+              <a routerLink="/AdminLogin">
+                 <i class="fa fa-duotone fa-user fa-2x"></i>
+                  <span class="nav-text">
+                      Admin Login
+                  </span>
+              </a>
+          </li>
+        </ul>
+    </nav>

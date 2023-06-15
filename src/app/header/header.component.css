@@ -1,0 +1,103 @@
+.Nav-Bar{
+    position:fixed;
+    background-color: #394451;
+    display: flex;
+    height:70px;
+    top: 0;
+    width:100%;
+    padding: 10px;
+    align-items: center;
+    z-index: 10;
+}
+.Logo{
+    width:100px;
+    justify-content: center;
+    color: white;
+    font-weight:bolder;
+}
+.Search-Bar{
+    width:300px; 
+}
+.Nav-Links{
+    display: flex;
+    position: absolute; 
+    right:30px; 
+    justify-content:space-between;
+    width:auto;
+    
+}
+
+.Nav-Links li{
+    text-decoration: none;
+    list-style: none;
+    float: right;
+    font-weight: bold;
+}
+.Nav-Links li a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    margin-right: 10px;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 30px;
+    color: white;
+}
+
+
+/* ----------------------  SIDE NAV -----------------------*/
+
+.side-nav{
+    background-color: #394451
+    ;
+    width:250px;
+    height:93vh;
+    position:fixed;
+    margin-top:0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: block;
+    left: -250px;
+    transition: 0.5s ease-in-out;
+    z-index:1000;
+}
+.side-nav li a{
+    text-decoration: none;
+    color: white;
+}
+.side-nav li{
+    list-style: none;
+    margin-top: 10px;
+}
+.sidenav{
+    left:0px;
+    transition: 0.5s ease-in-out;
+}
+
+.title{
+    background-color: white;
+    height:50px;
+    text-align: center;
+    border-top-right-radius:10%;
+    border-bottom-right-radius: 10%;
+}
+.nav-text{
+    line-height: 50px;
+    font-weight: bold;
+}
+
+
+/* -----------------------Mobile Divice------------------------- */
+
+@media(max-width:500px){
+    .Logo{
+        width:50px;
+        justify-content: center;
+    }
+    .Search-Bar{
+        width:100px; 
+    }
+}

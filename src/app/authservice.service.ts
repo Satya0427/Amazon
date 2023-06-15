@@ -10,7 +10,7 @@ export class AuthserviceService {
   UsersUrl='https://rest-api-yhi2.onrender.com/user';
   condition:boolean=false;
   
-  LoginUser = new Subject();
+  LoginUser = new BehaviorSubject("Login");
 
   constructor(private http:HttpClient) {}
 

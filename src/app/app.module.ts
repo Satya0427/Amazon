@@ -10,6 +10,7 @@ import { MobilesComponent } from './Mobiles/mobiles/mobiles.component';
 import { CartComponent } from './Mobiles/cart/cart.component';
 import { AdminLoginComponent } from './Authentications/admin-login/admin-login.component';
 import { UsersDetailsComponent } from './Authentications/users-details/users-details.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { UsersDetailsComponent } from './Authentications/users-details/users-det
     MobilesComponent,
     CartComponent,
     AdminLoginComponent,
-    UsersDetailsComponent,  
+    UsersDetailsComponent,
+    HeaderComponent,  
   ],
   imports: [
     
